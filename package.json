@@ -18,7 +18,7 @@
     "name": "Neil Fraser"
   },
   "scripts": {
-    "prepare": "gulp blockly_javascript_en",
+    "prepare": "gulp blockly_javascript_en; rm -v !(\"package.json\"|\"blockly_node_javascript_en.js\")",
     "lint": "eslint .",
     "test": "tests/run_all_tests.sh"
   },
